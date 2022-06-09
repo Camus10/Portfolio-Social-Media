@@ -1,0 +1,11 @@
+{
+  "name": "social-media-raosphi",
+  "version": "1.0.0",
+  "description": "Terinspirasi dari instagram",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Camus",
+  "license": "ISC"
+}
