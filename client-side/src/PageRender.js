@@ -1,10 +1,16 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { NotFound } from './components/NotFound';
 
 
 const generatePage = (pageName) => {
   const component = () => require(`./pages/${pageName}`).default;
-  return React.createElement(component());
+  
+  try{
+    return React.createElement(component());
+  }catch(error){
+    return <NotFound />
+  }
 }
 
 export const PageRender = () => {
