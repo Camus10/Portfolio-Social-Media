@@ -15,6 +15,9 @@ app.get('/', (req, res) => {
   });
 });
 
+// Routing api
+app.use('/api', require('./routers/authRouter'));
+
 mongoose.connect(process.env.MONGO_URI, {
   useCreateIndex: true,
   useFindAndModify: false,
