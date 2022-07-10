@@ -33,5 +33,8 @@ code {
   margin: auto;
 }
 
-/* ---------- style/auth ---------- */
+/* ---------- Authentication ---------- */
 @import url('./styles/auth.css');
+
+/* ---------- Loading ---------- */
+@import url('./styles/loading.css');
